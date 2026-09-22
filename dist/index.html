@@ -82,7 +82,7 @@ document.head.appendChild(s);
 <div class="code-wrap"><button class="code" type="button" id="copy" aria-label="Copiar cupom MM20">MM20</button><small id="copy-label" aria-live="polite">Clique para copiar</small></div>
 </aside>
 <div class="grid">
-<article class="plan"><h3>Plano mensal</h3><p class="period">Uma assinatura por mês.</p><p class="old">De <s>R$ 47/mês</s> por apenas</p><p class="price"><span>R$</span><strong>27</strong><small>/mês</small></p><p class="condition">Com o cupom <strong>MM20</strong></p><a class="cta" href="https://lastlink.com/p/C1A0A8C63/checkout-payment/">Quero o mensal por R$ 27/mês</a><p class="foot">Exclusivo para usuários do Memória Musical.</p></article>
+<article class="plan"><h3>Plano mensal</h3><p class="period">Uma assinatura por mês.</p><p class="old">De <s>R$ 47/mês</s> por apenas</p><p class="price"><span>R$</span><strong>27</strong><small>/mês</small></p><p class="condition">Com o cupom <strong>MM20</strong></p><a class="cta" href="#" payt_action="oneclick_buy" data-object="47XXJA-47ZBYG">Quero o mensal por R$ 27/mês</a><select payt_element="installment" data-object="47XXJA-47ZBYG" style="display:none"></select><p class="foot">Exclusivo para usuários do Memória Musical.</p></article>
 </div>
 <p class="notice">O valor com desconto é válido somente para quem já é usuário do Memória Musical e utiliza o cupom MM20 no checkout.</p><p class="status" id="status" role="status"></p>
 </section>
@@ -95,4 +95,6 @@ document.getElementById('copy').addEventListener('click', async () => {
 setTimeout(() => {
  document.querySelectorAll('.delayed-content').forEach(element => element.classList.add('is-visible'));
 }, 278000);
-</script></body></html>
+</script>
+<script type="text/javascript" src="https://checkout.payt.com.br/multiple-oneclickbuyscript/LXMEOB.js"></script>
+</body></html>
